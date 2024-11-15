@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge - Decodificador de Texto</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/global-style.css" />
+    <!--API Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="formulario">
+      <h1 class="formulario__titulo">Digite seu texto</h1>
+      <input type="text" class="formulario__texto" placeholder="..." />
+      <fieldset class="formulario__botoes">
+        <button type="button" class="btn__criptografar">Criptografar</button>
+        <button type="button" class="btn__descriptografar">Descriptografar</button>
+      </fieldset>
+    </main>
+
+    <aside class="exibicao">
+      <img
+        src="/assets/chat.svg"
+        alt="Icone de uma caixa de mensagem com interrogação no centro"
+        class="exibicao__imagem--chat"
+      />
+      <img
+        src="/assets/check.svg"
+        alt="icone semelhante a letra V representando confere"
+        class="exibicao__imagem--check ocultar"
+      />
+      <p class="exibicao__titulo">Nenhuma mensagem encontrada!</p>
+
+      <p class="exibicao__resultado ocultar"></p>
+
+      <button type="button" class="exibicao__btn-copiar ocultar">Copie!</button>
+    </aside>
+    <script src="js/script.js"></script>
+  </body>
+</html>

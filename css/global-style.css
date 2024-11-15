@@ -1,0 +1,27 @@
+/*Google Fonts*/
+@import url(__variaveis.css);
+@import url(__header.css);
+@import url(__main.css);
+@import url(__aside.css);
+@import url(__footer.css);
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  background-color: var(--fundo);
+  margin: 40px;
+
+  .ocultar {
+    display: none !important;
+  }
+}
