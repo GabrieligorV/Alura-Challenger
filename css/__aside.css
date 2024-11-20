@@ -1,49 +1,45 @@
 .exibicao {
-  grid-row: 1/4;
-  width: 380px;
-  height: calc(100vh - 80px);
-  padding: 20px;
-  border-radius: 6px;
-  font-family: var(--poppins);
-  text-align: center;
-  color: var(--fundo);
-  background-color: var(--cor-primaria);
   display: grid;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto;
   place-content: center;
   place-items: center;
   gap: 20px;
+  width: 436px;
+  height: calc(100vh - 80px);
+  padding: 20px;
+  border-radius: 6px;
+  background-color: var(--cor-primaria);
 
-  & .exibicao__titulo {
-    font-family: var(--poppins);
-    font-size: 1.5rem;
-    font-weight: 600;
+  & .exibicao__mensagem {
+    justify-items: center;
+    .mensagem__titulo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+    }
   }
 
   & .exibicao__resultado {
     justify-self: center;
-    font-weight: 400;
     font-family: var(--kanit);
-    font-size: 1.5rem;
     font-weight: 300;
+    font-size: 1.25rem;
     line-height: 1.2;
     overflow-y: auto;
     max-height: 400px;
-    max-width: 300px;
-    word-break: break-all;
+    width: 400px;
+    word-break: keep-all;
     padding: 8px;
   }
 
   & .exibicao__btn-copiar {
     width: 150px;
-    font-family: var(--poppins);
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
     padding: 16px 32px;
     border-radius: 6px;
     border: var(--fundo) solid;
-    color: var(--fundo);
     background-color: var(--cor-primaria);
 
     &:hover {

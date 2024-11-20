@@ -12,12 +12,14 @@
   box-sizing: border-box;
   border: none;
   outline: none;
+  font-family: var(--poppins);
+  color: var(--fundo);
 }
 
 body {
   display: grid;
+  grid-auto-flow: column;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(3, auto);
   background-color: var(--fundo);
   margin: 40px;
 

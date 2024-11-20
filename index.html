@@ -17,7 +17,7 @@
 
   <body>
     <main class="formulario">
-      <h1 class="formulario__titulo">Digite seu texto</h1>
+      <h1 class="formulario__titulo">Digite uma palavra!</h1>
       <input type="text" class="formulario__texto" placeholder="..." />
       <fieldset class="formulario__botoes">
         <button type="button" class="btn__criptografar">Criptografar</button>
@@ -26,17 +26,19 @@
     </main>
 
     <aside class="exibicao">
-      <img
-        src="/assets/chat.svg"
-        alt="Icone de uma caixa de mensagem com interrogação no centro"
-        class="exibicao__imagem--chat"
-      />
-      <img
-        src="/assets/check.svg"
-        alt="icone semelhante a letra V representando confere"
-        class="exibicao__imagem--check ocultar"
-      />
-      <p class="exibicao__titulo">Nenhuma mensagem encontrada!</p>
+      <div class="exibicao__mensagem">
+        <img
+          src="/assets/chat.svg"
+          alt="Icone de uma caixa de mensagem com interrogação no centro"
+          class="mensagem__imagem-chat"
+        />
+        <img
+          src="/assets/check.svg"
+          alt="icone semelhante a letra V representando confere"
+          class="mensagem__imagem-check ocultar"
+        />
+        <p class="mensagem__titulo">Digite um texto ou uma palavra!</p>
+      </div>
 
       <p class="exibicao__resultado ocultar"></p>
 
