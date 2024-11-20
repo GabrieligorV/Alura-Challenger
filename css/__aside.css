@@ -21,6 +21,7 @@
 
   & .exibicao__resultado {
     justify-self: center;
+    text-align: center;
     font-family: var(--kanit);
     font-weight: 300;
     font-size: 1.25rem;
